@@ -54,6 +54,7 @@ namespace ConsoleApplication
 //method
         public void Draw()
         {
+            Console.ForegroundColor=this.color;
             Console.CursorLeft = xPosition;
             Console.CursorTop = yPosition;
             Console.Write(sprite);

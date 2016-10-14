@@ -15,13 +15,14 @@ namespace ConsoleApplication
 
             Console.Write("Player 1, press a key to represent your player: ");
            char playerSprite=Console.ReadKey().KeyChar;
+
           players.Add(new Player(playerSprite));
 
            
            Console.Write("Player 2, press a key to represent your player: ");
            playerSprite=Console.ReadKey().KeyChar;
 
-            players.Add(new Player(playerSprite));
+            players.Add(new Player(playerSprite, ConsoleColor.Magenta));
           
            
             Console.WriteLine("\n\nHello Jan!");
@@ -90,6 +91,7 @@ namespace ConsoleApplication
             {
                 player.Draw();
             }
+            Console.ForegroundColor=ConsoleColor.Green;
         }
     }
 }
