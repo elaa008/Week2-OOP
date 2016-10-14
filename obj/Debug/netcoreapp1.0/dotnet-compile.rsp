@@ -1,5 +1,5 @@
---temp-output:H:\My Documents\GitHub\Week2OOP\obj\Debug\netcoreapp1.0\
---out:H:\My Documents\GitHub\Week2OOP\bin\Debug\netcoreapp1.0\Week2OOP.dll
+--temp-output:H:\My Documents\GitHub\Week2-OOP\obj\Debug\netcoreapp1.0\
+--out:H:\My Documents\GitHub\Week2-OOP\bin\Debug\netcoreapp1.0\Week2-OOP.dll
 --define:DEBUG
 --define:TRACE
 --define:NETCOREAPP1_0
@@ -9,7 +9,7 @@
 --optimize:False
 --debug-type:portable
 --emit-entry-point:True
---output-name:Week2OOP
+--output-name:Week2-OOP
 --file-version:1.0.0.0
 --version:1.0.0.0
 --informational-version:1.0.0
@@ -87,5 +87,7 @@
 --reference:C:\Users\em770\.nuget\packages\System.Threading.Timer\4.0.1\ref\netstandard1.2\System.Threading.Timer.dll
 --reference:C:\Users\em770\.nuget\packages\System.Xml.ReaderWriter\4.0.11\ref\netstandard1.3\System.Xml.ReaderWriter.dll
 --reference:C:\Users\em770\.nuget\packages\System.Xml.XDocument\4.0.11\ref\netstandard1.3\System.Xml.XDocument.dll
-H:\My Documents\GitHub\Week2OOP\Program.cs
-H:\My Documents\GitHub\Week2OOP\Player.cs
+H:\My Documents\GitHub\Week2-OOP\Player.cs
+H:\My Documents\GitHub\Week2-OOP\Program.cs
+H:\My Documents\GitHub\Week2-OOP\Week2OOP\Program.cs
+H:\My Documents\GitHub\Week2-OOP\Week2OOP\Week2-OOP\Player.cs
