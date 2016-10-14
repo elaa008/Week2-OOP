@@ -10,6 +10,7 @@ namespace ConsoleApplication
         char sprite;
         int health;
         int speed;
+        ConsoleColor color = ConsoleColor.Gray;
 
 //properties
         public int XPosition
@@ -31,6 +32,24 @@ namespace ConsoleApplication
             yPosition=3;
             speed=1;
         }
+
+     public Player(char playerSprite)
+        {
+            sprite=playerSprite;
+            xPosition=3;
+            yPosition=3;
+            speed=1;
+        }
+
+     public Player(char playerSprite,ConsoleColor color)
+        {
+            sprite=playerSprite;
+            xPosition=3;
+            yPosition=3;
+            speed=1;
+            this.color=color;
+        }
+
 
 //method
         public void Draw()
