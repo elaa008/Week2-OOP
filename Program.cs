@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace ConsoleApplication
 {
@@ -13,36 +14,45 @@ namespace ConsoleApplication
             Console.WriteLine("Hello Elina!");
             Console.ReadLine();
             Console.Clear();
-            player1.Draw();
 
-            string direction="";
-            ConsoleKeyInfo keyPress= Console.ReadKey(true);
-            if (keyPress.Key==ConsoleKey.UpArrow)
-            {
-                direction="up";
-            }
+     
 
-            if (keyPress.Key==ConsoleKey.DownArrow)
+            while(true)
             {
-                direction="down";
-            }
+                if(Console.KeyAvailable)
+                {
+                string direction="";
+                ConsoleKeyInfo keyPress= Console.ReadKey(true);
+                if (keyPress.Key==ConsoleKey.UpArrow)
+                {
+                    direction="up";
+                }
 
-            if (keyPress.Key==ConsoleKey.LeftArrow)
-            {
-                direction="left";
-            }
+                if (keyPress.Key==ConsoleKey.DownArrow)
+                {
+                    direction="down";
+                }
 
-            if (keyPress.Key==ConsoleKey.RightArrow)
-            {
-                direction="right";
+                if (keyPress.Key==ConsoleKey.LeftArrow)
+                {
+                    direction="left";
+                }
+
+                if (keyPress.Key==ConsoleKey.RightArrow)
+                {
+                    direction="right";
+                }
+                
+                player1.Move(direction);
+                }
+
+                Console.Clear();
+                player1.Draw();
+                Thread.Sleep(1000/30);
             }
+                
+
             
-            player1.Move(direction);
-            
-
-
-            Console.ReadKey(true);
-
-        }
     }
+}
 }
