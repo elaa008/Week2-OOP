@@ -11,6 +11,8 @@ namespace ConsoleApplication
         int health;
         int speed;
         ConsoleColor color = ConsoleColor.Gray;
+        public Inventory inventory = new Inventory();
+
 
 //properties
         public int XPosition

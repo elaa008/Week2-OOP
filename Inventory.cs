@@ -61,10 +61,17 @@ namespace ConsoleApplication
 
         public void ListInventory()
         {
+            if(Items.Count>0)
+            {
             //class,object,list
             foreach(Item item in Items)
-            {
+                  {
                 item.Describe();
+                 }
+            }
+            else
+            {
+                Console.WriteLine("Inventory is empty");
             }
         }
     }

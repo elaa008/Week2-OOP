@@ -19,10 +19,10 @@ namespace ConsoleApplication
           players.Add(new Player(playerSprite));
 
            
-           Console.Write("Player 2, press a key to represent your player: ");
-           playerSprite=Console.ReadKey().KeyChar;
+           //Console.Write("Player 2, press a key to represent your player: ");
+          // playerSprite=Console.ReadKey().KeyChar;
 
-            players.Add(new Player(playerSprite, ConsoleColor.Magenta));
+           // players.Add(new Player(playerSprite, ConsoleColor.Magenta));
           
            
             Console.WriteLine("\n\nHello Jan!");
@@ -67,6 +67,13 @@ namespace ConsoleApplication
                 {
                     direction="right";
                 }
+            
+                if(keyPress.Key==ConsoleKey.Z)
+                {
+                    players[0].inventory.Open();
+                    players[0].inventory.AddItem(new Item("Sword","A shiny sword", 't'));
+                    players[0].inventory.Close();
+                }
                 
                 players[0].Move(direction);
                 }
@@ -90,6 +97,8 @@ namespace ConsoleApplication
           foreach (Player player in players)
             {
                 player.Draw();
+                Console.SetCursorPosition(1,5);
+                player.inventory.ListInventory(); 
             }
             Console.ForegroundColor=ConsoleColor.Green;
         }
